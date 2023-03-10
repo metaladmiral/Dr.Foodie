@@ -70,7 +70,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-span{
+#Foodie{
     color: rgb(255, 221, 0);
     
 }
@@ -92,14 +92,10 @@ span{
 }
 .detel a:hover {
     background: rgb(255, 221, 0);
-}
-
-#getStarted {
-    color: #fff;
-}
-#getStarted:hover {
     color: black;
 }
+
+
 
 .images{
     width: 45%;
