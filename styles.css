@@ -29,19 +29,19 @@ nav{
     cursor: pointer;
 }
 button{
-    color: #ff0000;
+    color: black;
     padding: 10px 25px;
     background: rgb(238, 238, 71);
-    border: 1px solid #ff0000;
+    border: 1px solid black;
     border-radius: 20px;
     outline: #000;
     transition: all 0.2s ease-in-out;
 
 }
 button:hover {
-    color: #111110;
+    color: #f3232f;
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    border: 1px solid #0b0b0b;
+    border: 1px solid #f32323;
   }
 nav ul li {
     display: inline-block;
@@ -91,11 +91,14 @@ span{
     border-radius: 5px;
 }
 .detel a:hover {
-    background: #212121;
+    background: rgb(255, 221, 0);
 }
 
 #getStarted {
     color: #fff;
+}
+#getStarted:hover {
+    color: black;
 }
 
 .images{
