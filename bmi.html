@@ -120,9 +120,10 @@
   }
 
       .bmiContainer {
-      max-width: 600px;
+      max-width: 400px;
+      max-height: 500px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 50px;
       background:linear-gradient(to left , orange, tomato);
       border-radius: 10px;
       box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.3);
@@ -148,10 +149,15 @@
     }
 
     input[type="number"] {
-      padding: 5px;
+      padding: 3px;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      width: 70%;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .input:focus {
+      outline: 3px solid transparent;
+      outline-color: #8f33bc;
     }
 
     button {
@@ -159,14 +165,14 @@
       padding: 5px;
       border: none;
       border-radius: 5px;
-      background-color: #4CAF50;
+      background-color: #c95ee4;
       color: white;
       cursor: pointer;
-      width: 150px;
+      width: 130px;
     }
 
     button:hover {
-      background-color: #3e8e41;
+      background-color: #cc00ff;
     }
 
     #buttonA {
@@ -245,7 +251,7 @@
         <input type="number" id="height" name="height" placeholder="Enter your height" required>
         <br>
         <br>
-        <center><button type="button" onclick="calculateBMI()">Calculate BMI</button></center>
+        <center><button type="button" onclick="calculateBMI()">Next</button></center>
         <br>
         <label for="result">Your BMI:</label>
         <input type="text" id="result" name="result" readonly>
