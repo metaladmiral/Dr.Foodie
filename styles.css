@@ -28,6 +28,7 @@ nav{
     width: 200px;
     cursor: pointer;
 }
+
 button{
     color: black;
     padding: 10px 25px;
@@ -36,8 +37,9 @@ button{
     border-radius: 20px;
     outline: #000;
     transition: all 0.2s ease-in-out;
-
+    cursor: pointer;
 }
+
 button:hover {
     color: #f3232f;
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
