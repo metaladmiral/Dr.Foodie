@@ -209,7 +209,19 @@
       let height = document.getElementById("height").value / 100;
       let bmi = weight / (height * height);
       document.getElementById("result").value = bmi.toFixed(1);
+
+      if(bmi<18.5){
+        alert("You are Under-weight");
+      }
+      else if (bmi>24.9) {
+        alert("You are Over-weight");
+      }
+      else{
+        alert("You are normal weight");
+      }
     } 
+
+
 
   </script>
 
