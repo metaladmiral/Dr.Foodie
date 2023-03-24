@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="swipper.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <script>
+      function calculateBMI() {
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value / 100;
+    let bmi = weight / (height * height);
+    document.getElementById("result").value = bmi.toFixed(1);
+  } 
+
+</script>
+
   </head>
   <body>
     <div class="background">
@@ -29,7 +39,7 @@
 
   <nav class="navbar navbar-light bg-indigo-400">
     <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/index.html">
         <img src="/images/logo1.png" alt="" width="230" height="75">
     </a>
     </div>
@@ -49,7 +59,7 @@
             <img src="1.svg" class="cardImg" />
             <h2>Welcome</h2>
             <h3>Let's calculate your BMI</h3>
-            <input
+            <input id="weight"
               spellcheck="false"
               oninput="checkValid(event)"
               type="text"
@@ -63,20 +73,20 @@
             </div>
             <h2>Hurray!</h2>
             <h3>Let's calculate your BMI</h3>
-            <input
+            <input id="height"
               oninput="checkValid(event)"
               type="text"
               placeholder="Enter Your Height(cm)"
             />
-            <button disabled type="button" onclick="gotoSlide(2)">Next</button>
+            <button disabled type="button" onclick="gotoSlide(2);calculateBMI()">Next</button>
           </div>
           <div class="swiper-slide">
             <div className="image-wrapper">
               <img src="3.svg" class="cardImg" />
             </div>
-            <h2>Finish</h2>
+            <input type="text" id="result" name="result" readonly>
             <h3>You're all good to go</h3>
-            <button type="submit" onclick="window.location.href='/weight.html'">Complete</button>
+            <button type="submit" onclick="window.location.href='/weight.html'">Next</button>
             <button class="secondary" onclick="restart()">Restart</button>
           </div>
         </div>
