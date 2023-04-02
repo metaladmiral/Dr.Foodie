@@ -18,13 +18,13 @@
     document.getElementById("result").value = bmi.toFixed(1);
 
     if(bmi<18.5){
-        alert("You are Under weight");
+      document.querySelector(".abc").innerHTML = 'You are underweight';
       }
       else if (bmi>24.9) {
-        alert("You are Over weight");
+        document.querySelector(".abc").innerHTML = 'You are Overweight';
       }
       else{
-        alert("You are normal weight");
+        document.querySelector(".abc").innerHTML = 'You are Normal';
       }
   } 
 
@@ -50,11 +50,11 @@
   <nav class="navbar navbar-light bg-indigo-400">
     <div class="container">
     <a class="navbar-brand" href="/index.html">
-        <img src="/images/logo1.png" alt="" width="230" height="75">
+        <img src="logo1.png" alt="" width="230" height="75">
     </a>
     </div>
     <button type="button" class="btn btn-primary" onclick=""><b>Sign In</b></button>
-</nav>
+  </nav>
 
 
   <div class="bodyPage">
@@ -67,7 +67,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="1.svg" class="cardImg" />
+            <img src="weight.png" class="cardImg" />
             <h2>Welcome</h2>
             <h3>Let's calculate your BMI</h3>
             <input id="weight"
@@ -80,7 +80,7 @@
           </div>
           <div class="swiper-slide">
             <div className="image-wrapper">
-              <img src="2.svg" class="cardImg" />
+              <img src="height.png" class="cardImg" />
             </div>
             <h2>Hurray!</h2>
             <h3>Let's calculate your BMI</h3>
@@ -93,10 +93,10 @@
           </div>
           <div class="swiper-slide">
             <div className="image-wrapper">
-              <img src="3.svg" class="cardImg" />
+              <img src="Fitness.png" class="cardImg" />
             </div>
             <input type="text" id="result" name="result" readonly>
-            <h3>You're all good to go</h3>
+            <h3 class="abc">You're all good to go</h3>
             <button type="submit" onclick="window.location.href='/weight.html'">Next</button>
             <button class="secondary" onclick="restart()">Restart</button>
           </div>

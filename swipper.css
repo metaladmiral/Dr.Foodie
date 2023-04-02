@@ -2,16 +2,6 @@ html,
 body {
     height:100vh;
 }
-nav{
-  display: flex;
-  width: 86%;
-  margin: auto;
-  padding: 20px 0;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
 body {
   margin: 0;
   display: grid;
@@ -27,6 +17,14 @@ body {
   place-items: center;
   place-content: center;
 }
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo{
   width: 200px;
   cursor: pointer;
@@ -41,13 +39,11 @@ button{
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
 button:hover {
   color: #f3232f;
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   border: 1px solid #f32323;
 }
-
 .squares li{
   position: absolute;
   display: block;
@@ -189,7 +185,7 @@ h3 {
   color: #0b0b0c;
   margin: 0 0 24px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   align-self: stretch;
 }
 
