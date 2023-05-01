@@ -170,29 +170,59 @@ ul li a:hover{
 
   .banner {
     background-color: #dc3545;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerImg {
+    margin-left: 6.5%;
   }
 
   .bannerTagline {
+    text-align: center;
     float: right;
-    margin-top: -17.5%;
-    margin-right: 10%;
+    margin-top: -21.5%;
+    margin-right: 5%;
+    font-size: 21px;
+  }
+  #bannerLine1 {
+    color: #ffbf1e;
+  }
+  #bannerLine2 {
+    color: white;
   }
 
   .bannerButton {
-    padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #dc3545;
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .bannerButton:hover {
+    background-color: white;
+    color: black;
   }
 
   .mealFormCard {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 300px;
     height: 250px;
     padding: 30px;
     justify-content: center;
     align-items: center;
+  }
+  .bannerPara {
+    background-color: white;
+    padding: 10px;
   }
