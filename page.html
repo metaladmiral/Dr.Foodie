@@ -68,23 +68,26 @@
         <center>
         <form action="#" id="mealForm">
             <div class="mealFormCard">
-                <div>
-                    <h3>Gender</h3>
-                    Male<input type="radio">
-                    Female<input type="radio">
-                    Others<input type="radio">
+                <div class="cardGender">
+                    <h3 class="cardText">Gender</h3>
+                    Male  <input type="radio" name="Gender" value="Male">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Female  <input type="radio" name="Gender" value="Female">
                 </div>
-                <div>
-                    <h3>Age</h3>
-                    <input type="number" required>
+                
+                <div class="cardAge">
+                    <h3 class="cardText">Age</h3>
+                    <input type="number" id="age" placeholder="Enter you Age" required>
                 </div>
-                <div>
+                <div class="cardSubmit">
                     <button type="submit" class="mealFormButton">Start</button>
                 </div>
             </div>
         </form>
     </center>
-        <h4>Copyright @shribreeze 2023</h4>
+    <br>
+        <h4 style="text-align: center;">Copyright @shribreeze 2023</h4>
+        <br>
+        
     </div>
 </body>
 </html>
