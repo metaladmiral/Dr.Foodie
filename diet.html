@@ -28,6 +28,7 @@
                 </ul>
             </div>
         </div> 
+        <form onsubmit="submit();returnFalse">
         <label for="Region">Select Region:</label>
         <select name="region" id="region" onchange="showdiet()">
             <option value="East-Indian">East-Indian</option>
@@ -42,6 +43,7 @@
             <option value="Non-Veg">Non-Veg</option>
         </select>
         <button type="submit">Get Your Meal</button>
+        </form>
 
         <div class="content">
             <div id="East-Indian" class="data">
@@ -64,16 +66,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-    $('#region').on('change', function() {
-        if ( this.value == 'E');
-        {
-            $("#East-Indian").show();
-        }
-        else{
-            $("#East-Indian").hide();
-        }
-          });
-        });
+     function submit(){
+        let region=document.querySelector(.region).value;
+        let preference=document.querySelector(.preference).value;
+     }
     </script>
 </body>
 </html>
