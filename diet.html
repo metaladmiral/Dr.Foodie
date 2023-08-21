@@ -28,47 +28,72 @@
                 </ul>
             </div>
         </div> 
-        <form onsubmit="submit();returnFalse">
-        <label for="Region">Select Region:</label>
-        <select name="region" id="region" onchange="showdiet()">
-            <option value="East-Indian">East-Indian</option>
-            <option value="North-Indian">North-Indian</option>
-            <option value="South-Indian">South-Indian</option>
-            <option value="West-Indian">West-Indian</option>
-            <option value="International">International</option>
-        </select>
-        <label for="Preference">Select Preference:</label>
-        <select name="preference" id="preference">
-            <option value="Veg">Veg</option>
-            <option value="Non-Veg">Non-Veg</option>
-        </select>
-        <button type="submit">Get Your Meal</button>
+        <form action="" method="POST" onsubmit="submitA();return false;">
+            <label for="Region">Select Region:</label>
+                <select name="region" id="region" onchange="">
+                    <option value="1">East-Indian</option>
+                    <option value="2">North-Indian</option>
+                    <option value="3">South-Indian</option>
+                    <option value="4">West-Indian</option>
+                    <option value="5">International</option>
+                </select>
+            <label for="Preference">Select Preference:</label>
+                <select name="preference" id="preference">
+                    <option value="a">Veg</option>
+                    <option value="b">Non-Veg</option>
+                </select>
+
+            <button onclick="">Get Your Meal</button>
         </form>
 
         <div class="content">
-            <div id="East-Indian" class="data">
+            <div id="1a" style="display: none;" class="data">
                 <p class="image"><img src="Diet Plan/Male/East Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
             </div>
-            <div id="North-Indian" class="data">
+            <div id="2a" style="display: none;" class="data">
                 <p class="image"><img src="Diet Plan/Male/North Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
             </div>
-            <div id="South-Indian" class="data">
+            <div id="3a" style="display: none;" class="data">
                 <p class="image"><img src="Diet Plan/Male/South Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
             </div>
-            <div id="West-Indian" class="data">
+            <div id="4a" style="display: none;" class="data">
                 <p class="image"><img src="Diet Plan/Male/West Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
             </div>
-            <div id="International" class="data">
+            <div id="5a" style="display: none;" class="data">
                 <p class="image"><img src="Diet Plan/Male/International Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+
+            <div id="1b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/East Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="2b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/North Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="3b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/South Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="4b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/West Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="5b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/International Non Veg Meal Plan - Male.jpg" width="1000px"></p>
             </div>
 
         </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-     function submit(){
-        let region=document.querySelector(.region).value;
-        let preference=document.querySelector(.preference).value;
+     function submitA(){
+        let region=document.querySelector('#region').value;
+        let preference=document.querySelector('#preference').value;
+        let res = region+""+preference;
+        console.log(res);
+        try {
+            document.getElementById(res).style.display= "block";
+        }catch(err) {
+            console.error(err);
+        }
+        // return false;
      }
     </script>
 </body>
